@@ -1,0 +1,113 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0 auto;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+}
+
+#menu-h ul{
+    list-style-type: none; /* remover as bolinhas da ul */
+    padding: 0;
+    text-align: center;
+    background: linear-gradient(rgba(255, 255, 255, 0.5), rgba(40, 20, 212, 0));
+}
+
+#menu-h ul li {
+    display: inline;
+}
+
+#menu-h ul li .sorteio{
+    color: #FFF;
+    padding: 20px;
+    display: inline-block;
+    text-decoration: none;
+    transition: background .2s;
+    cursor: pointer;
+}
+
+.sorteio:hover {
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgb(70, 70, 70, 0.6));
+    color: rgba(207, 207, 207, 1);
+}
+
+.ola {
+    background-image: url(./nois.jpeg);
+    background-position: 20% 40%;
+}
+
+.coluna {
+    background-color: aliceblue;
+}
+
+.msg { 
+    display:inline-block;
+    background:rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(11px);
+    width: 50%;
+    margin: auto;
+    margin-top: 20px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    padding: 60px;
+    box-shadow: 0 15px 25px rgba(0,0,0,.6);
+    border-radius: 10px;
+}
+
+p {
+    color:rgb(0, 0, 0);
+    font-size: 18px;
+    font-weight: bold; /* Deixar tudo em negrito */
+
+}
+
+.botao {
+    position: relative;
+    margin-top: 30px;
+    margin-bottom: 20px;
+    margin-right: 10%;
+    float: right; /* Fez com que o botão ficasse na direita */
+    padding: 15px;
+    background: transparent; 
+    box-sizing: border-box;
+    box-shadow: 0 15px 25px rgba(0,0,0.6);
+    border-radius: 5px;
+    text-align: center;
+    color: rgb(235, 227, 227);
+    font-size: 16px;
+    width: 200px;
+    font-family:Arial, Helvetica, sans-serif;
+    letter-spacing: 3px;
+}
+
+.botao:hover {
+    cursor: pointer;
+    color: rgb(255, 255, 255);
+    background-color: rgba(255, 255, 255, 0.1);
+    transform: scale(1.1);
+    transition: all 0.5s;
+}
+
+.botao:after {
+    border-right: 0.1em solid rgb(255, 255, 255);
+    border-bottom: 0.1em solid rgb(255, 255, 255);
+    content: "";
+    display: inline-block;
+    height: 1em;
+    vertical-align: bottom;
+    width: 1em;
+    -webkit-transform: rotate(-45deg);
+        -ms-transform: rotate(-45deg);
+            transform: rotate(-45deg);
+}
+
+#seta {
+    position: absolute;
+    padding: 20px;
+    box-shadow: transparent;
+    border: solid transparent;
+    border-width: 0 0 2px 2px;
+}
